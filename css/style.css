@@ -15,11 +15,9 @@ nav{
     position: fixed;
     top: 0;
     width: 100%;
-    background: transparent;
+    background: white;
     z-index: 999;
     height: 50px;
-    backdrop-filter: blur(10px);
-
 }
 nav p a{
     text-decoration: none;
@@ -276,40 +274,13 @@ aside div:hover{
     background: rgba(48, 46, 46, 0.688);
 }
 /* end top screen */
-/*  index-im-g  */
-.index-im-g{
-    position: relative;
-    margin-top:70px;
-}
-.index-im-g .im-g1{
-    position: absolute;
-    border-radius: 50%;
-    object-fit: cover;
-}
-.index-im-g .im-g2{
-    border-radius: 50%;
-    position: absolute;
-}
-.index-im-g .im-g3{
-    position: absolute;
-    border-radius: 50%;
-     object-fit: cover;
-     border: 10px solid #cdcdb6;
-}
-.index-im-g .im-g4{
-    position: absolute;
-     border-radius: 50%;
-}
-/* end index-im-g */
-
  .index-one{
     margin: auto;
     width: 75%;
     margin-top: 50px;
 }
 .index-one h1{
-    font-size: 53px;
-    font-weight: 400;
+    font-size: 48px;
     color:#b2a289aa;
     text-align: center;
 }
@@ -322,7 +293,7 @@ aside div:hover{
 .index-one p{
     text-align: center;
     font-size: 20px;
-    color: #0000009e;    
+    color: #000;
 }
 .floor{
     padding-top: 10px;
@@ -341,7 +312,7 @@ aside div:hover{
 }
 .floor  a{
 text-decoration: none;
-color: black;
+color: #000;
 }
 .floor h6{
     text-align: center;
@@ -356,157 +327,6 @@ color: black;
     letter-spacing: 1px;
 }
 
-@media only screen and (max-width: 600px) {
-    .index-im-g{
-        width: 100%;
-        height: 1100px;
-    }
-    .index-im-g .im-g1{
-        width: 255px;
-        height: 255px;
-        left: 20px;
-    }
-    .index-im-g .im-g2{
-        width: 260px;
-        height: 260px;
-        right: 12px;
-        top: 266px;
-    }
-    .index-im-g .im-g3{
-        width: 320px;
-        height: 320px;
-        top: 68%;
-        left: 1.5%;
-    }
-    .index-im-g .im-g4{
-        width: 205px;
-        height: 205px;
-        right: 10px;
-        top: 49%;
-    }
-    .index-one{
-        width: 100%;
-    }
-}
-@media only screen and (min-width: 600px) {
-    .index-im-g{
-        width: 100%;
-        height: 1100px;
-        margin-bottom: 165px;
-    }
-    .index-im-g .im-g1{
-        width: 313px;
-        height: 313px;
-        left: 50px;
-    }
-    .index-im-g .im-g2{
-        width: 295px;
-        height: 295px;
-        right: 30px;
-        top: 245px;
-    }
-    .index-im-g .im-g3{
-        width: 460px;
-        height: 460px;
-        top: 50%;
-        left: 12%;
-    }
-    .index-im-g .im-g4{
-        width: 213px;
-        height: 213px;
-        right: 15px;
-        bottom: -120px;
-    }
-}
-@media only screen and (min-width: 768px) {
-    .index-im-g{
-        width: 100%;
-        height: 1000px;
-    }
-    .index-im-g .im-g1{
-        width: 313px;
-        height: 313px;
-        left: 55px;
-        top: 10px;
-    }
-    .index-im-g .im-g2{
-        width: 282px;
-        height: 282px;
-        right: 18px;
-        top: 3px;
-    }
-    .index-im-g .im-g3{
-        width: 468px;
-        height: 468px;
-        top: 50%;
-        left: 18%;
-    }
-    .index-im-g .im-g4{
-        width: 213px;
-        height: 213px;
-        right: 137px;
-        top: 301px;
-    }
-}
-@media only screen and (min-width: 992px) {
-    .index-im-g{
-        width: 100%;
-        height: 750px;
-        margin-top:70px;
-    }
-    .index-im-g .im-g1{
-        width: 328px;
-        height: 328px;
-        left: 45px;
-    }
-    .index-im-g .im-g2{
-        width: 372px;
-        height: 372px;
-        right: 45px;   
-    }
-    .index-im-g .im-g3{
-        width: 502px;
-        height: 474px;
-        top: 33%;
-         left: 27%;
-    }
-    .index-im-g .im-g4{
-        width: 250px;
-        height: 250px;
-        right: 45px;
-         top: 480px;
-    }
-}
-@media only screen and (min-width: 1200px) {
-    .index-im-g{
-        position: relative;
-        width: 100%;
-        height: 700px;
-        margin-top:70px;
-    }
-    .index-im-g .im-g1{
-        width: 328px;
-        height: 328px;
-        left: 45px;
-    }
-    .index-im-g .im-g2{
-        width: 372px;
-        height: 372px;
-        right: 45px;   
-    }
-    .index-im-g .im-g3{
-        width: 502px;
-        height: 474px;
-        top: 30%;
-         left: 29%;
-    }
-    .index-im-g .im-g4{
-        width: 250px;
-        height: 250px;
-        right: 45px;
-         top: 409px;
-    }
-}
 .follow{
     display: flex;
     justify-content: center;
