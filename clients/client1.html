@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css"> -->
+    <title>Lens studio-Mohamed & Amira</title>
+    <style>
+     .image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.image-preview-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+}
+
+.image-preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-preview img{
+   max-width: 90vw;
+  max-height: 90vh;
+    
+}
+
+    </style>
+</head>
+<body>
+   
+      <div class="image-gallery">
+        <img class="image" src="photo/330688423_1250149415909853_639891943736616223_n.jpg" alt="Image 1">
+        <img class="image" src="photo/330741851_162686146537202_5261493503732908717_n.jpg" alt="Image 2">
+        <img class="image" src="photo/330755839_1240379706574877_2916343456124539871_n.jpg" alt="Image 3">     
+         <img class="image" src="photo/330758530_120194880815748_4250838642147402577_n.jpg" alt="Image 4">
+        <img class="image" src="photo/330810839_2577757492364388_8469270381389398433_n.jpg" alt="Image 5">
+        <img class="image" src="photo/330818110_469340481937263_7680568237181142243_n.jpg" alt="Image 6">
+        <img class="image" src="photo/331041964_751330609930481_3883876841251258117_n.jpg" alt="Image 7">
+        <img class="image" src="photo/331136257_1068296597461630_5820476634073232805_n.jpg" alt="Image 8">
+      </div>
+      <div class="image-preview-container">
+        <div class="image-preview"></div>
+      </div>
+      <script>
+   const images = document.querySelectorAll('.image');
+const imagePreviewContainer = document.querySelector('.image-preview-container');
+const imagePreview = document.querySelector('.image-preview');
+
+images.forEach(image => {
+  image.addEventListener('click', () => {
+    const imageUrl = image.getAttribute('src');
+    imagePreview.innerHTML = `<img src="${imageUrl}" alt="Image Preview">`;
+    imagePreviewContainer.style.display = 'block';
+  });
+});
+
+imagePreviewContainer.addEventListener('click', () => {
+  imagePreviewContainer.style.display = 'none';
+});
+      </script>
+
+     
+</body>
+</html>
